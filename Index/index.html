@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>OS Simulator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(186, 186, 186, 0.49);opacity: 1;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">OS Simulator</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pschedule">Process Scheduling</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#psync">Process synchronization</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#bankers">Banker's algorithm</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#memmanage">Memory management</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pagerepl">Page replacement</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#diskschedule">Disk scheduling</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#filealloc">File allocation</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="page-top" style="background-image: url(&quot;assets/img/bg-pattern.png&quot;);background-color: #457cb0;height: 1072.76px;">
+      <div class="container" style="color: rgb(255,255,255);">
+        <!-- Start: 1 Row 2 Columns -->
+        <div>
+            <div class="container">
+                <div class="row">
+                  <h2 style="color: rgb(255,255,23);text-shadow: 2px 2px #000fff;"></br><b>Operating System Simulator</b></br></br></h2>
+                  <div class="col-md-6" style="font-size: 22px;">
+                    <b style="font-size: 25px;">Concepts demonstrated</b></br>
+                    <li>Process scheduling</li>
+                    <li>Process synchronization</li>
+                    <li>Banker's algorithm</li>
+                    <li>Memory management</li>
+                    <li>Page replacement</li>
+                    <li>Disk scheduling</li>
+                    <li>File allocation</li>
+                  </div>
+                  <div class="col-md-6" style="font-size: 22px;">
+                    <b style="font-size: 25px;">Team Members</b></br>
+                    1. Md Rakib Hasan (201CS132)</br>
+                    2. Mehul Todi (201CS133)</br>
+                    3. Mohit Jangu (201CS134) </br>
+                    4. Nikhil Kumar (201CS135) </br>
+                    5. Nitin Jaydeep (201CS136)</br>
+                    6. Pampati Abhinav Sai (201CS137) </br>
+                    7. Patel Aeris (201CS138)</br>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: 1 Row 2 Columns -->
+      </div>
+    </section>
+
+    <section id="pschedule" class="features" style="background-color: #000000;height: 965px;">
+        <div class="container" style="color: rgb(255,255,255);">
+          <div class="my-auto">
+            <h2 class="mb-5">Process Scheduling</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+
+                <p>The process scheduling is the activity of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.Process scheduling is an essential part of a Multiprogramming operating systems. Such operating systems allow more than one process to be loaded into the executable memory at a time and the loaded process shares the CPU using time multiplexing.
+                </p>
+      <div class="subheading mb-2">Following Problems are demonstrated in the simulator :
+                </div>
+                <p>1. Shortest Job First <br>
+                  2. First Come First Served <br>
+                  3. Round Robin	<br>
+      4. Priority Scheduling  <br>
+      5. Shortest Remaining Time First  <br>
+                </p>
+                <div class="subheading mb-2">Demo:
+                </div>
+      <div class="row">
+      <a href="../Process Scheduling/src/sjf.html" style='color:yellow' class="btn btn-outline-primary col-md-3">Shortest Job First</a>&emsp;
+                <a href="../Process Scheduling/src/fcfs.html" style='color:yellow' class="btn btn-outline-primary col-md-3">First Come First Served</a>&emsp;
+                <a href="../Process Scheduling/src/rr.html" style='color:yellow' class="btn btn-outline-primary col-md-3">Round Robin</a>
+              </div>
+              <br>
+          <div class="row">
+          <a class="btn btn-outline-primary col-md-3" style='color:yellow' href="../Process Scheduling/src/priority.html">Priority Scheduling</a>&emsp;
+      <a class="btn btn-outline-primary col-md-4" style='color:yellow' href="../Process Scheduling/src/srtf.html">Shortest Remaining Time First</a>
+    </div>
+      </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="psync" class="cta" style="background-color: rgba(0,0,0,0.5);height: 965px;">
+        <div class="container">
+            <h2 class="mb-5">Process Synchronization</h2>
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+
+                <p>Process Synchronization means sharing system resources by processes in a such a way that, Concurrent access to shared data is handled thereby minimizing the chance of inconsistent data. Maintaining data consistency demands mechanisms to ensure synchronized execution of cooperating processes.
+                </p>
+                <div class="subheading mb-2">Following Problems are demonstrated in the simulator :
+                </div>
+                <p>1. Producer Consumer Problem <br>
+                  2. Reader - Writer Problem <br>
+                  3. Dining Philosopher Problem <br>
+                </p>
+                <div class="subheading mb-2">Demo:
+                </div>
+                <div class="row">
+                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/pc_wiki.html">Producer Consumer Problem</a>
+                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/rw_wiki.html">Reader Writer Problem</a>
+                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/dining_wiki.html">Dining Philosopher Problem</a>
+              </div>
+              <br>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="bankers" class="cta" style="background-color: rgba(53, 136, 82, 0.54);height: 965px;">
+        <div class="container">
+          <h2 class="mb-5">Banker's Algorithm</h2>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <p>The banker’s algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by simulating the allocation for predetermined maximum possible amounts of all resources, then makes an “s-state” check to test for possible activities, before deciding whether allocation should be allowed to continue.
+              </p>
+              <div class="subheading mb-2">Demo:
+              </div>
+              <div class="row">
+              <a class="btn btn-outline-primary col-md-3" href="../Bankers/banker.html">Banker's algorithm</a>
+              </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="memmanage" class="cta" style="background-color: rgb(249,92,82);height: 965px;">
+        <div class="container">
+          <h2 class="mb-5">Memory Management</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+
+              <p>The memory management function keeps track of the status of each memory location, either allocated or free. It determines how memory is allocated among competing processes, deciding which gets memory, when they receive it, and how much they are allowed. When memory is allocated it determines which memory locations will be assigned. It tracks when memory is freed or unallocated and updates the status.
+              </p>
+
+
+		<div class="subheading mb-2"><font color="black">Following Problems are demonstrated in the simulator :
+              </font>
+            </div>
+		<p>
+		Memory Management<br>
+		</p>
+		<div class="subheading mb-2">Demo:
+              </div>
+		<div class="row">
+		<a class="btn btn-outline-primary col-md-4" href="../MFT/index.html">Memory Management</a>
+          </div>
+        </div>
+    </section>
+    <section id="pagerepl" class="cta"style="background-color: rgba(42, 98, 134, 1);height: 965px;">
+        <div class="container">
+          <font color='white'>
+          <h2 class="mb-5">Page Replacement Techniques</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+
+               <p>The page replacement algorithm decides which memory page is to be replaced. The process of replacement is
+                 sometimes called swap out or write to disk. Page replacement is done when the requested page is not found in
+                 the main memory (page fault).</p>
+
+
+              <div class="subheading mb-2">Following Problems are demonstrated in the simulator :
+              </div>
+              <p>1.Least  recently used  <br>
+                2. most recently used <br>
+                3. optimal page replacement<br>
+                4. most frequently used<br>
+                5. second chance (clock replacement)
+              </p>
+              <div class="subheading mb-2">Demo:
+              </div>
+              <div class="row">
+              <a class="btn btn-outline-primary col-md-4" href="../page replacement/lruindex.html">Page Replacement</a>
+               </div>
+
+		    <div class="subheading mb-2">wiki:
+
+                  <div class="row">
+                    <a class="btn btn-outline-primary col-md-4" href="../page replacement/wiki.html">wiki</a></button>
+                </div>
+                </font>
+           </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <section id="diskschedule" class="cta" style="background-color: rgb(25,17,57);height: 965px;">
+        <div class="container">
+          <font color='white'>
+          <h2 class="mb-5">Disk Scheduling Techniques</h2>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+		<p>Disk scheduling is the method that computer operating systems use to decide in which order the block I/O operations will be submitted to storage volumes. I/O scheduling is sometimes called disk scheduling.
+              </p>
+            <div class="subheading mb-2">Demo:
+
+              </div>
+              <div class="row">
+              <a class="btn btn-outline-primary col-md-4" href="../Disk/disk.html">Disk Scheduling Algorithms</a>
+          </div>
+
+        </div>
+        </div>
+        </div>
+      </font>
+    </section>
+    <section id="filealloc" class="cta" style="height: 965px;background-color: rgba(255,255,255,0.5);">
+        <div class="container">
+          <div class="my-auto">
+            <h2 class="mb-5">File Allocation Techniques</h2>
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+
+                <p>The allocation method defines how the files are stored in the disk blocks. The direct access nature of the disks gives us the flexibility to implement the files. In many cases, different files or many files are stored on the same disk. The main problem that occurs in the operating system is that how we allocate the spaces to these files so that the utilization of disk is efficient and the quick access to the file is possiblets advantages and disadvantages.
+                  <br>
+                The main idea behind contiguous allocation methods is to provide :
+                <br>
+                • Efficient disk space utilization
+                <br>
+                • Fast access to the file blocks
+                </p>            </div>
+
+            </div>
+          </div>
+           <div class="subheading mb-2">Demo:
+
+           </div>
+              <div class="row">
+              <a class="btn btn-secondary col-md-4" href="../FileAllocationAlgorithms/contiguous.html">Contiguous File Allocation</a>&emsp;
+              <a class="btn btn-secondary col-md-4" href="../FileAllocationAlgorithms/linked.html">Linked File Allocation</a>
+          </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
